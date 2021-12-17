@@ -1,0 +1,39 @@
+body,
+html {
+    height: 100%;
+}
+
+.login-container {
+    background-image: url(https://wallpaperbat.com/img/177417-wallpaper-4k-nature-3840x2160-wallpaper-fotografi-alam.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.login-center {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 50px;
+    height: 350px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.login-header {
+    font-size: 25px;
+    align-self: center;
+    color: white;
+    padding-bottom: 70px;
+}
+
+.username-input {
+    margin-bottom: 50px;
+    color: white;
+}

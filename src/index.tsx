@@ -1,14 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { ChakraProvider } from "@chakra-ui/react";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { Login } from "../src/containers/Login/Login";
+import { PrivateRoute } from "../src/containers/Login/PrivateRoute";
+import configureStore from "../src/store/store";
+import { Provider } from "react-redux";
+
+const store = configureStore();
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <Provider store={store}>
+            <ChakraProvider>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/login" element={<Login />} />
+                        <Route path="//*" element={<PrivateRoute component={App} />}></Route>
+                    </Routes>
+                </BrowserRouter>
+            </ChakraProvider>
+        </Provider>
+    </React.StrictMode>,
+    document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

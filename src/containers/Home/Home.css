@@ -1,0 +1,61 @@
+.home-container {
+    padding: 10px;
+    min-height: 100vh;
+    background-color: #546a76;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: black;
+    background-color: #edf2f7;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.spinner {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+}
+
+.errors-container {
+    margin-top: 50px;
+    justify-content: space-between;
+    font-size: xx-large;
+    color: #2980b9;
+    margin-left: 42%;
+    margin-right: 42%;
+    padding: 30px;
+    background-color: #edf2f7;
+    border-radius: 15px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.buttons-container {
+    margin-left: auto;
+    margin-right: 20px;
+    justify-content: center;
+}
+
+.side-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.chakra-button .css-taj3dd {
+    color: #3f292b !important;
+}

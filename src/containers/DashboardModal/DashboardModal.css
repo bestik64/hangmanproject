@@ -1,0 +1,14 @@
+.table-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 60vh;
+}
+
+.modal-body {
+    max-height: 60vh;
+}
+
+.column {
+    width: 200px;
+}
