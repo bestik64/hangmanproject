@@ -9,3 +9,6 @@ Instructions:
 
 Running tests: 
  - uncomment line 23 in calculationHelper.ts and in the root of the project run "npm run test". One test will fail (App.test.ts) and that is expected because it is not configured for check and running. Function for calculating score is tested in calculate.test.ts file
+
+Note: 
+ - in my opinion, use of Redux state management was not necessary for this type of application (the application is small and props are not passed through multiple components). Hence, it was used for demonstration purposes
