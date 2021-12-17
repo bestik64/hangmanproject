@@ -137,6 +137,15 @@ export const Home = () => {
         fetchQuote();
     }, [fetchQuote]);
 
+    useEffect(() => {
+        toast({
+            description: "Type in letters to guess a quote from a famous person. Keep the errors count low and be as quick as possible. Good luck!",
+            status: "info",
+            duration: 6000,
+            isClosable: true,
+        });
+    }, [toast]);
+
     const onSubmit = () => {
         sendResult();
     };
